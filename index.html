@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fichas</title>
+  <style>
+    :root{
+      --red:#a41d1d;
+      --white:#ffffff;
+    }
+
+    *{box-sizing:border-box;}
+
+    html,body{
+      margin:0;
+      min-height:100%;
+      background:var(--white);
+      color:var(--red);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+    }
+
+    .page{
+      min-height:100vh;
+      position:relative;
+      padding:28px 16px;
+    }
+
+    .list{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:0;
+      width:max-content;
+    }
+
+    .list a{
+      display:inline-block;
+      color:var(--red);
+      text-decoration:none;
+      font-size:clamp(18px,3vw,36px);
+      line-height:.95;
+      font-weight:700;
+      letter-spacing:-.04em;
+      transition:transform .15s ease, opacity .15s ease;
+    }
+
+    .list a:hover,
+    .list a:focus-visible{
+      transform:translateX(5px);
+      opacity:.55;
+      outline:none;
+    }
+
+    @media (max-width:640px){
+      .page{
+        padding:20px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="list" aria-label="Listado de fichas">
+      <a href="ficha-01-alfacenttauri.html">01</a>
+      <a href="ficha-02-andrea-gonzales.html">02</a>
+      <a href="ficha-03-4lover.html">03</a>
+      <a href="ficha-04-arturo-aguiar.html">04</a>
+      <a href="ficha-05-max-bellman.html">05</a>
+      <a href="ficha-06-carlos-orrego.html">06</a>
+      <a href="ficha-07-federico-infante.html">07</a>
+      <a href="ficha-08-angel-gabriel.html">08</a>
+      <a href="ficha-09-cecilia-codou.html">09</a>
+      <a href="ficha-10-axtor.html">10</a>
+      <a href="ficha-11-claudio-albarran.html">11</a>
+      <a href="ficha-12-cynthia-cohen.html">12</a>
+      <a href="ficha-13-diego-permar.html">13</a>
+      <a href="ficha-14-francisco-belamino.html">14</a>
+      <a href="ficha-15-javier-bilatz.html">15</a>
+      <a href="ficha-16-jazmin-giordano.html">16</a>
+      <a href="ficha-17-jazmin-grinbaum.html">17</a>
+      <a href="ficha-18-juampi-bonino.html">18</a>
+    </nav>
+  </main>
+</body>
+</html>
